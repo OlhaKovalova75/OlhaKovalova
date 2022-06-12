@@ -1,0 +1,24 @@
+@mixin button {
+     font-size: 16px;
+    font-weight: 600;
+    line-height: 60px;  
+}
+
+@mixin button_main {
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    border: none;
+}
+@mixin text_p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@mixin text_h {
+    font-size: 50px;
+    line-height: 60px;
+}
