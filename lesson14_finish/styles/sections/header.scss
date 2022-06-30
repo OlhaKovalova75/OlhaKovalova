@@ -4,6 +4,7 @@
     margin: 0 auto;
     max-width: 1440px;
 }
+
 .header_block {
     display: flex;
     padding-top: 50px;
@@ -13,7 +14,7 @@
 .header_logo {
     display: flex;
     align-items: center;
-   
+
 
     & a {
         font-size: 36px;
@@ -24,8 +25,7 @@
     }
 
     &__main {
-        display: flex;
-        flex-direction: column;
+        @include column;
         gap: 17px;
     }
 }
@@ -40,21 +40,15 @@
     }
 }
 
-
-
-
-
 .nav {
-    display: flex;
-    flex-direction: column;
+    @include column;
     gap: 19px;
     align-items: flex-end;
 }
 
 .nav_block {
-    display: flex;
-    flex-direction: row;
-       gap: 18px;
+    @include row;
+    gap: 18px;
     align-items: end;
 
     .nav_language a,
@@ -130,6 +124,7 @@ a.link.active {
     color: $color-blue;
     @include h5;
     gap: 15px;
+
     & a {
         color: $color-blue;
     }
@@ -150,7 +145,7 @@ a.link.active {
 }
 
 @media screen and (max-width: 768x) {
-    
+
     section.header {
         width: 100%;
     }
@@ -160,5 +155,5 @@ a.link.active {
         max-width: 768px;
     }
 
-    
+
 }

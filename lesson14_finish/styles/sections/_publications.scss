@@ -4,18 +4,18 @@
     @include wrapper;
 
 }
+
 .nav_block .nav_language a,
 .nav_block .nav_adress a {
     color: $color-grey-light;
 }
+
 .publication_main {
     background-color: $color-background;
     margin-top: 60px;
 
     .publication {
-        display: flex;
-        // justify-content: space-between;
-        flex-direction: column;
+        @include column;
         gap: 30px;
         padding: 60px 0;
         border-bottom: 2px solid $color-grey-low;
@@ -34,22 +34,14 @@
 }
 
 
-
 .public_grid.block {
-    // display: flex;
-    // flex-direction: column;
-    //     gap: 0;
-    // margin: 0 auto;
     padding-bottom: 40px;
     background-color: $color-white;
 }
 
 .block_text {
-    display: flex;
-    flex-direction: column;
-    // align-items: flex-start;
+    gap: 60px;
     gap: 15px;
-    // margin: 0 auto;
     padding: 30px;
 
     time {

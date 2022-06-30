@@ -6,11 +6,10 @@
 }
 
 .services {
-    display: flex;
+    @include column;
     margin: 0 auto;
     gap: 60px;
     max-width: 1080px;
-    flex-direction: column;
 }
 
 
@@ -29,16 +28,14 @@
 }
 
 .services__block {
-    display: flex;
-    flex-direction: column;
+    @include column;
     justify-content: space-between;
     gap: 28px;
     align-items: center;
 }
 
 .grid__block {
-    display: flex;
-    flex-direction: column;
+    @include column;
     gap: 30px;
     color: $color-white;
 
@@ -55,8 +52,7 @@
     }
 
     &__title {
-        display: flex;
-        flex-direction: column;
+        @include column;
         gap: 28px;
         align-items: center;
         padding-bottom: 60px;
@@ -87,10 +83,9 @@
 }
 
 .shadow {
-    display: flex;
+    @include column;
     margin: 0 auto;
     width: 1400px;
-    flex-direction: column;
 
     & span {
         background: #CACADB;
@@ -106,35 +101,42 @@
 
 .services_area {
     color: #FFFFFF;
+
     & h4 {
         @include h4;
     }
+
     &__list {
         padding: 30px 0 60px;
+
         ul {
             padding-left: 8px;
             list-style-type: none;
             column-count: 2;
             line-height: 26px;
+
             li {
                 max-width: 1080px;
             }
         }
     }
+
     & li {
         @include li;
     }
 }
 
 .recommended {
-        background: $color-background;
+    background: $color-background;
+
     &_main {
         max-width: 1320px;
         margin: 0 auto;
         padding: 30px 40px;
         margin-top: 60px;
-    border-radius: 12px 12px 0px 0px;
+        border-radius: 12px 12px 0px 0px;
     }
+
     & hr {
         height: 2px;
         @include hr
@@ -143,12 +145,12 @@
 
 
 .block_text {
-    display: flex;
-    flex-direction: column;
+    @include column;
     align-items: flex-start;
     gap: 15px;
     margin: 0 auto;
     padding: 30px;
+
     time {
         @include span;
         color: $color-grey-light;
@@ -167,18 +169,18 @@
 }
 
 .publication_service_title {
-    display: flex;
-    flex-direction: column;
-       gap: 10px;
+    @include column;
+    gap: 10px;
     padding: 30px 0;
+
     & h6 {
         @include h6;
         text-transform: uppercase;
         color: $color-blue;
     }
-        .text a {
-        display: flex;
-        flex-direction: row;
+
+    .text a {
+        @include row;
     }
 }
 
@@ -186,6 +188,3 @@
     @include h2;
     @include pink_title;
 }
-
-
-

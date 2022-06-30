@@ -3,13 +3,14 @@
 .wrapper {
     @include wrapper;
 }
+
 .nav_block .nav_language a,
 .nav_block .nav_adress a {
     color: $color-grey-light;
 }
+
 .team {
-    display: flex;
-    flex-direction: column;
+    @include column;
     gap: 60px;
 
     h2 {
@@ -22,8 +23,7 @@
 }
 
 .team_grid.block {
-    display: flex;
-    flex-direction: column;
+    @include column;
     gap: 0;
     margin: 0 auto;
     padding-bottom: 40px;
@@ -33,7 +33,7 @@
         @include block_text;
         margin: 0;
         padding-top: 15px;
-        flex-direction: row;
+        @include row;
         justify-content: space-between;
 
         .arrow {
@@ -44,8 +44,7 @@
         }
 
         &.name {
-            display: flex;
-            flex-direction: column;
+            @include column;
             gap: 5px;
             padding-top: 0;
 

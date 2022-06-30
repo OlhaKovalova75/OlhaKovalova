@@ -109,8 +109,7 @@ letter-spacing: 0em;
 }
 
 @mixin block_text {
-   display: flex;
-   flex-direction: column;
+   @include column;
    align-items: flex-start;
    gap: 15px;
    margin: 0 auto;
@@ -178,6 +177,13 @@ letter-spacing: 0em;
    flex-direction: row;
 gap: 26px;
 align-items: center;
+}
+@mixin column {
+   display: flex;
+    flex-direction: column;
+}
+@mixin row {
+   @include row;
 }
 
 $font-weight-bold: 700;

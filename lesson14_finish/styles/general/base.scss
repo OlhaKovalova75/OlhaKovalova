@@ -8,6 +8,7 @@
     padding: 0;
     text-decoration: none;
 }
+
 body {
     display: block;
     margin: 0;
@@ -25,49 +26,46 @@ footer {
 .container {
     display: flex;
     font-family: "Montserrat", sans-serif;
-    // max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px 0 20px;
 }
- .wrapper {
+
+.wrapper {
     display: flex;
     margin: 0 auto;
     width: 1440px;
     align-items: center;
     justify-content: space-between;
-    // padding-top: 50px;
     padding-bottom: 5px;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 30px;
-           }
-           .arrow {
-            display: flex;
-            width: 32px;
-            height: 32px;
-            background: #F5F5FA;
-            border-radius: 16px;
-            justify-content: center;
-            align-items: center;
-        }
+}
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
 
-           .block_text.arrow:hover {
-            color:#F0145A;
-        
-        }
-        input:focus {
-            border: 1px solid #24A3FF;
-        }
-        
-        .pagination a {
-            width: 16px;
+.arrow {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background: #F5F5FA;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_text.arrow:hover {
+    color: #F0145A;
+}
+
+input:focus {
+    border: 1px solid #24A3FF;
+}
+
+.pagination a {
+    width: 16px;
     height: 16px;
     border-radius: 10px;
     background: #b5d0d1;
-        }
-                     
-
-              
+}

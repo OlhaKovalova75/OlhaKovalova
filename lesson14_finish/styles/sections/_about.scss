@@ -3,59 +3,63 @@
 
 .about_wrapper {
     @include wrapper;
-   }
-   .nav_block .nav_language a,
+}
+
+.nav_block .nav_language a,
 .nav_block .nav_adress a {
     color: $color-grey-light;
 }
+
 .intro,
 .more_block {
-    display: flex;
+    @include row;
     justify-content: space-between;
-    flex-direction: row;
-      gap: 30px;
-      padding: 60px 180px;
-    }
+    gap: 30px;
+    padding: 60px 180px;
+}
+
 .intro_idea {
-    display: flex;
-    flex-direction: column;
+    @include column;
     align-items: flex-start;
     gap: 28px;
     max-width: 658px;
 }
+
 .intro_idea h3 {
     @include h2;
-       @include pink_title;
+    @include pink_title;
 }
+
 .more_title h2 {
     @include h2;
-       @include pink_title;
-     
+    @include pink_title;
+
 }
+
 .intro_idea p,
 .more_title p {
-   @include p19;
-color: $color-black;
+    @include p19;
+    color: $color-black;
 }
+
 .intro_idea {
-   border-right: 4px solid $color-grey-low;
+    border-right: 4px solid $color-grey-low;
     padding-right: 30px;
 }
+
 .intro_right {
-    display: flex;
-    flex-direction: column;
+    @include column;
     gap: 40px;
 }
+
 .intro_right__block {
-    display: flex;
-    flex-direction: column;
+    @include column;
     align-items: flex-start;
     gap: 10px;
-    }
-   
+}
+
 .intro_right__block.item {
-    display: flex;
-    flex-direction: row;
+    @include row;
     justify-content: space-between;
     gap: 13px;
     align-items: center;
@@ -66,8 +70,9 @@ color: $color-black;
     @include h3;
     line-height: 44px;
 }
+
 .intro_right p {
-   
+
     @include h5;
     color: $color-blue-dark;
     font-weight: 400;
@@ -81,77 +86,86 @@ color: $color-black;
     height: 438px;
     background-image: url(/lesson14_finish/image14/Team.jpg);
 }
+
 .team img {
     max-width: 100%;
     position: relative;
 }
+
 .team h1 {
     @include h1;
     color: $color-white;
     position: absolute;
     transform: translate(100%, 150%);
 }
+
 .more_block {
     gap: 60px;
 }
+
 .more_title:first-child {
     max-width: 658px;
 }
+
 .more_title:last-of-type {
-max-width: 100%;
+    max-width: 100%;
 }
 
 
 .achieve {
     background-color: $color-background;
-    }
+}
 
-    .achieve_block {
-        display: flex;
-    flex-direction: column;
+.achieve_block {
+    @include column;
     gap: 30px;
     padding: 30px 0;
+}
+
+.achieve_block.row {
+    @include row;
+    justify-content: space-around;
+}
+
+.row_item {
+    display: flex;
+    text-align: center;
+    width: 300px;
+    background: $color-white;
+    padding: 25px 0;
+
+    & img {
+        margin: auto;
     }
-    .achieve_block.row {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-    
-    .row_item {
-        display: flex;
-           text-align: center;
-        width: 300px;
-        background: $color-white;
-        padding: 25px 0;
-        & img {
-            margin: auto;
-                         }
-    }
-    
+}
+
 
 .achieve_block h6 {
-       @include h6;
+    @include h6;
     text-transform: uppercase;
     text-align: center;
-        margin: 0 auto;
-        color: $color-blue-dark;
+    margin: 0 auto;
+    color: $color-blue-dark;
 }
+
 .pagination {
     display: flex;
     gap: 15px;
-        margin: 0 auto;}
-       
-        .pagination a {
-            width: 16px;
+    margin: 0 auto;
+}
+
+.pagination a {
+    width: 16px;
     height: 16px;
     border-radius: 10px;
     background: $color-grey;
-        }
-        .pagination a.active {
-            background:  $color-blue;
-                }
-                .pagination a:hover {
-                    background: $color-blue;
-opacity: 0.6;
-                }
+}
+
+.pagination a.active {
+    background: $color-blue;
+}
+
+.pagination a:hover {
+    background: $color-blue;
+    opacity: 0.6;
+}
