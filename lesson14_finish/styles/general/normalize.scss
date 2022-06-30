@@ -1,0 +1,13 @@
+.arrow a:hover {
+    color: $color-pink;
+}
+
+
+.pagination a.active {
+    background: $color-blue;
+}
+
+.pagination a:hover {
+    background: $color-blue;
+    opacity: 0.6;
+}

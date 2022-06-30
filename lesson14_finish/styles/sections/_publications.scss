@@ -1,0 +1,98 @@
+@import '../general/sass-base.scss';
+
+.wrapper {
+    @include wrapper;
+
+}
+.nav_block .nav_language a,
+.nav_block .nav_adress a {
+    color: $color-grey-light;
+}
+.publication_main {
+    background-color: $color-background;
+    margin-top: 60px;
+
+    .publication {
+        display: flex;
+        // justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 0;
+        border-bottom: 2px solid $color-grey-low;
+
+        .segment {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto;
+            width: 233px;
+            height: 42px;
+            background-color: $color-grey-low;
+            border-radius: 12px;
+        }
+    }
+}
+
+
+
+.public_grid.block {
+    // display: flex;
+    // flex-direction: column;
+    //     gap: 0;
+    // margin: 0 auto;
+    padding-bottom: 40px;
+    background-color: $color-white;
+}
+
+.block_text {
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-start;
+    gap: 15px;
+    // margin: 0 auto;
+    padding: 30px;
+
+    time {
+        @include span;
+        color: $color-grey-light;
+        text-transform: uppercase;
+    }
+
+    hr {
+        @include hr;
+        border: none;
+    }
+}
+
+.public_grid.block h5 {
+    @include h5;
+    color: $color-blue;
+}
+
+
+.public_grid.block p {
+    @include p_publication;
+}
+
+
+
+
+.part:hover {
+    text-align: center;
+    vertical-align: middle;
+    gap: 10px;
+    width: 105px;
+    height: 38px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 16px;
+}
+
+.button {
+    @include button_long;
+
+    & h5 {
+        @include h5;
+        color: $color-white;
+    }
+}

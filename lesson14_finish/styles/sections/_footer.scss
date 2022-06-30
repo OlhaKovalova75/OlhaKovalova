@@ -1,0 +1,88 @@
+@import '../general/sass-base.scss';
+
+footer {
+    width: 100%;
+    background: $color-background;
+    margin: 0 auto;
+}
+.footer {
+    margin: 0 auto;
+   }
+
+.wrapper {
+    // padding-top: 30px;
+    padding-bottom: 0;
+   }
+
+.footer_block {
+    display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 1320px;
+       }
+.footer_adress {
+    display: flex;
+        flex-direction: row;
+        line-height: 30px;
+        align-items: center;
+    gap: 763px;
+    }
+
+    .footer_adress.map {
+           @include footer-block;
+    }
+    .footer_adress.contact {
+        @include footer-block;
+     padding-top: 20px;
+    }
+
+.footer_adress.contact a,
+.footer_adress.map a:last-of-type,
+.footer_adress.contact img {
+    color: $color-blue;
+    font-weight: $font-weight-bold;
+}
+.footer_adress.contact a:hover {
+color: $color-pink;
+
+}
+
+.footer_adress.map a:last-of-type {
+    text-transform: uppercase;
+    @include span;
+}
+.footer_adress.contact a:nth-of-type(2) {
+     font-weight: $font-weight-bold; 
+  color: $color-violet;
+      }
+ 
+  address a {
+    font-weight: $font-weight-bold;
+    font-style: normal;
+    color: $color-blue;
+  }
+   .footer_adress a:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    color: $color-grey-light  
+   }
+   .footer_adress a:first-of-type {
+font-weight: 400;
+color: $color-violet;
+   }
+   .footer_adress.contact address a {
+    @include h5;
+    color: $color-blue;
+   }
+.footer_right {
+    @include h5;
+    color: $color-grey-light;
+font-weight: 400;
+}
+   
+
+  
+

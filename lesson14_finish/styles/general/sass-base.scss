@@ -1,0 +1,197 @@
+@font-face { 
+   font-family: "Montserrat", sans-serif;
+   src: url(../../../FONTs/Montserrat-VariableFont_wght.woff2);
+}
+
+@mixin h1 {
+   font-family: "Montserrat", sans-serif;
+      font-size: 96px;
+font-weight: 700;
+line-height: 117px;
+letter-spacing: 63px;
+}
+@mixin h2 {
+   font-family: "Montserrat", sans-serif;
+   font-size: 38px;
+ font-weight: 700;
+ line-height: 46px;
+ }
+
+ @mixin h2_mobile {
+   font-family: "Montserrat", sans-serif;
+   font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+  
+ }
+ @mixin h3 {
+   font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+ font-weight: 700;
+ line-height: 46px;
+ }
+ @mixin h4 {
+   font-family: "Montserrat", sans-serif;
+      font-size: 22px;
+font-weight: 700;
+line-height: 27px;
+ }
+ @mixin h5 {
+   font-family: "Montserrat", sans-serif;
+       font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+ }
+ 
+ @mixin h6 {
+   font-family: "Montserrat", sans-serif;
+       font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 1px;
+ }
+
+ @mixin pink_title {
+   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+   }
+ @mixin blue_phone {
+   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+
+ }
+ @mixin grid {
+         display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 30px;
+       }
+ 
+ @mixin p_grid {
+   font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+font-style: normal;
+font-family: "Montserrat", sans-serif;
+ }
+ @mixin li {
+   font-family: "Montserrat", sans-serif;
+   font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+font-style: normal;
+font-family: "Montserrat", sans-serif;
+}
+ @mixin wrapper {
+   display: flex;
+    margin: 0 auto;
+    width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+ }
+@mixin span {
+   font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+font-weight: 700;
+line-height: 15px;
+letter-spacing: 1px;
+}
+@mixin p_publication {
+   font-family: "Montserrat", sans-serif;
+   font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+}
+
+@mixin block_text {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 15px;
+   margin: 0 auto;
+}
+
+@mixin contact-font {
+   font-family: "Montserrat", sans-serif;
+font-size: 21px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+@mixin contact-h3 {
+   font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+font-weight: 700;
+line-height: 37px;
+letter-spacing: 0em;
+}
+
+@mixin button_long {
+   display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 18px 30px;
+    width: 211px;
+    border: none;
+            background-color: $color-blue;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $color-white;
+}
+@mixin button_text {
+   color: $color-white;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+}
+@mixin label {
+   width: 100%;
+   padding-left: 15px;
+   border: none;
+   border-radius: 12px;
+}
+@mixin p19 {
+   font-family: "Montserrat", sans-serif;
+   font-size: 19px;
+            font-weight: 400;
+            line-height: 30px;
+}
+@mixin hr {
+   background: $color-grey-low;
+   width: 100%;
+   height: 4px;
+   border: none;
+}
+
+@mixin footer-block {
+   display: flex;
+   flex-direction: row;
+gap: 26px;
+align-items: center;
+}
+
+$font-weight-bold: 700;
+$color-white: white;
+$color-grey-light: #B3B3BA;
+$color-grey: #b5d0d1;
+$color-black: black;
+$color-pink: #F0145A;
+$color-background: #F5F5FA;
+$color-blue-dark: #323264;
+$color-blue: #24A3FF;
+$color-blue-bright: #0085FF;
+$color-violet: #46466E;
+$color-grey-low: #E6E6F0;
+$color-gradient: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$color-gradient-pink: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+$border-radius: 0px 0px 12px 12px;

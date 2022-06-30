@@ -1,0 +1,67 @@
+@import '../general/sass-base.scss';
+
+.wrapper {
+    @include wrapper;
+}
+.nav_block .nav_language a,
+.nav_block .nav_adress a {
+    color: $color-grey-light;
+}
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    h2 {
+        @include h2;
+        color: $color-gradient-pink;
+        @include pink_title;
+        text-align: start;
+        padding: 60px 180px 0;
+    }
+}
+
+.team_grid.block {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    background-color: $color-white;
+
+    .block_text {
+        @include block_text;
+        margin: 0;
+        padding-top: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .arrow {
+            width: 32px;
+            height: 32px;
+            background: $color-background;
+            border-radius: 16px;
+        }
+
+        &.name {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding-top: 0;
+
+            & h5 {
+                color: $color-blue-dark;
+                @include h5;
+            }
+
+            & p {
+                color: $color-grey-light;
+                @include p_publication;
+            }
+        }
+    }
+}
+
+.block_text.arrow:hover {
+    color: $color-pink;
+}
